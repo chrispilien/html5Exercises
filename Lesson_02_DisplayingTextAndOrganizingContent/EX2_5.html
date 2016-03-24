@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- 
+Christopher Pilien
+Updated on Jan. 26, 2016
+-->
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		
+		<title>Exercise 2.5 Complete</title>
+		
+		<style> <!-- "Tell me I'm pretty" or the embedded css -->
+			body{
+				background-color: #555;
+			}
+			table{
+				background-color: lightblue; 
+				font-family: sans-serif;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+	
+    	<form method="post"> <!-- creates a form  -->
+		
+			<table cellpadding="10" border="1"> <!-- A table with cellpadding (creates space between the text and the border) -->
+			
+				<tr> <!-- Line 1: The title of the form-->
+					<th colspan="2">
+						Create Account
+					</th>
+				</tr>
+				
+				<tr> <!-- Line 2: First name -->
+					<td>
+						First Name:
+					</td>
+					
+					<td>
+						<input type="text" name="firstName" required></td>
+						<!-- Input: String & required -->
+				</tr>
+				
+				<tr> <!-- Line 3: Last name -->
+					<td>
+						Last Name:
+					</td>
+					
+					<td>
+						<input type="text" name="lastName" required></td>
+						<!-- Input: String & required -->
+				</tr>
+				
+				<tr> <!-- Line 4: Email -->
+					<td>
+						E-mail Address:
+					</td>
+					
+					<td>
+						<input type="email" name="email" required></td>
+						<!-- Input: email (must have this format: text@moretext) & required -->
+				</tr>
+				
+				<tr> <!-- Line 5: Username -->
+					<td>
+						Username:
+					</td>
+					
+					<td>
+						<input type="text" name="userName" required></td>
+						<!-- Input: String & required -->
+				</tr>
+				
+				<tr> <!-- Line 6: Password -->
+					<td>
+						Password:
+					</td>
+					
+					<td>
+						<input type="password" name="password" required></td>
+						<!-- Input: Password (hidden characters) & required -->
+				</tr>
+				
+				<tr> <!-- Line 7: Sex -->
+					<td>
+						Sex:
+					</td>
+					
+					<td>
+						<input type="radio" name="sex" value="Male" checked>Male<br>
+						<input type="radio" name="sex" value="Female">Female</td>
+						<!-- Input: Radio button (pick one of of these) -->
+				</tr>
+				
+				<tr> <!-- Line 8: Gender -->
+					<td>
+						Gender:<br>(No, it's not the<br>same thing as sex)
+					</td>
+					
+					<td>
+						<input type="radio" name="gender" value="Male" checked>Male<br>
+						<input type="radio" name="gender" value="Female">Female<br>
+						<input type="radio" name="gender" value="Other">Other
+						<!-- Input: Radio button (pick one of of these) -->
+					</td>
+				</tr>
+				
+				<tr> <!-- Line 9: Interests -->
+					<td valign="top">
+						Interests
+					</td>
+					
+					<td>
+						<input type="checkbox" name="interest" value="Sports">Sports<br>
+						<input type="checkbox" name="interest" value="MovieTv">Movies/TV<br>
+						<input type="checkbox" name="interest" value="vGames">Video Games<br>
+						<input type="checkbox" name="interest" value="Gardening">Gardening<br>
+						<input type="checkbox" name="interest" value="Cooking">Cooking<br>
+						<input type="checkbox" name="interest" value="Stitching">Sowing/Knitting<br>
+						<!-- Input: Checkbox (pick as many of these as you like) -->
+					</td>
+				</tr>
+				
+				<tr> <!-- Line 10: Favorite Thing -->
+					<td>
+						Favorite Favorite Thing
+					</td>
+					
+					<td>
+						<select name="favorite">
+							<option value="thing">Color</option>
+							<option value="thing">Sport Team</option>
+							<option value="thing">Game</option>
+							<option value="thing">Device</option>
+							<option value="thing">Art</option>
+							<option value="thing">People</option>
+							<option value="thing">Clothes</option>
+						</select>
+						<!-- A select list (a drop down list) -->
+					</td>
+				</tr>
+				
+				<tr> <!-- Line 11: Describe yourself -->
+					<td valign="top">
+						Describe yourself
+					</td>
+					
+					<td>
+						<textarea name="description" cols="50" rows="10">Type anything about yourself here. Ex: "My catchphrase is 'Wubba Lubba Dub Dub!'"</textarea>
+						<!-- Input: String in a large text area -->
+					</td>
+					
+				</tr>
+				
+				<tr> <!-- Line 12: Submit form -->
+				
+					<td colspan="2" align="center">
+						<input type="submit" value="Submit">
+						<!-- Input: a 'Submit' button -->
+					</td>
+					
+				</tr>
+				
+			</table>
+			
+		</form>
+		
+	</body>
+	
+</html>
