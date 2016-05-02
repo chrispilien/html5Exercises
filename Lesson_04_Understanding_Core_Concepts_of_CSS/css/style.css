@@ -1,0 +1,23 @@
+h2 /* Selector */
+	{ 
+		/*Property : (colon separates the property from value) value ; (semi-colon ends the declaration)*/
+		font-family: sans-serif;
+		font-style: italic;
+		color: teal;
+	}
+
+.DevelopmentStream  /* This is a class Affects the elements with this class*/
+	{
+		color:green;
+		font-family: sans-serif;
+	}
+	
+#header /* This is a id. Only affects the element with is id*/
+	{ 
+		color:blue;
+	}
+
+#fudge
+	{
+		color: navy;
+	}

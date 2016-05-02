@@ -1,0 +1,35 @@
+/*
+Christopher Pilien
+Updated Jan 29, 2016
+*/
+#container
+	{
+		width:1000px; /*makes the div this wide*/
+		height:1500px; /*makes the div this tall*/
+		background:teal;
+		margin:auto;
+	}
+#inner
+	{
+		/*position:absolute;*/
+		position:fixed; /*makes it move with the browser when scrolling*/
+		top:200px; /*makes space by this many pixels between the div and the top of the browser*/
+		left:200px; /*same as above but affecting from the left of the div*/
+		font-size:24px;
+		background:tomato;
+		z-index:1;
+	}
+#helloWorld /*Please no more hello world*/
+	{
+		height:200px; 
+		background:green;
+		text-align:center; /*centers the text*/
+	}
+#innerfooter
+	{
+		position:relative; /*makes the top relative to the element above it, the *sigh* helloWorld div*/
+		top:10px;
+		background:blue;
+		font-size:24px;
+		color:pink;
+	}
